@@ -1,0 +1,15 @@
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*  GLOBALIZE CSS                                                              */
+/*  MIT License Copyright (c) Fabien Conéjéro / FC84                           */
+/*/////////////////////////////////////////////////////////////////////////////*/
+:root{ font-family:'....','.....';caret-color:transparent;   }
+
+.dp-i{display:inline;}
+.dp-n{display:none;}.v-v{visibility:visible}.v-h{visibility:hidden}
+.us-n{-webkit-user-select:none;-ms-user-select:none;user-select:none;-khtml-user-select:none;-moz-user-select:none}
+
+.c-000{color:#000}.c-fff{color:#fff}
+.p-f{position:fixed}.p-r{position:relative}.p-a{position:absolute}
+.h-a{height:auto}
+.t-c{text-align:center}.t-l{text-align:left}.t-j{text-align:justify}.t-net{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fs-n{font-style:normal}
