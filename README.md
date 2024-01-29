@@ -1,9 +1,10 @@
 # Globalize.css - MIT License Copyright (c) Fabien Conéjéro / FC84
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
 ____________________________________
-V. ULTIMATE - 
-GLOBALIZE CSS  --  V.Ultimate
-MIT License Copyright (c) Fabien Conéjéro / FC84
+
+V. ULTIMATE - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
+____________________________________
+
 
 :root{  font-family:'....','.....';caret-color:transparent;   }
 
@@ -16,11 +17,16 @@ MIT License Copyright (c) Fabien Conéjéro / FC84
 .ha{height:auto}
 .tc{text-align:center}.tl{text-align:left}.tj{text-align:justify}.tnet{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fsn{font-style:normal}
+
+____________________________________
+____________________________________
+____________________________________
+____________________________________
 ____________________________________
 
-V. BASIC - 
-GLOBALIZE CSS  --  V.Basic                                                           
-MIT License Copyright (c) Fabien Conéjéro / FC84                           
+V. BASIC - GLOBALIZE CSS  - MIT License Copyright (c) Fabien Conéjéro / FC84  
+
+____________________________________
 
 :root{ font-family:'....','.....';caret-color:transparent;  }
 
