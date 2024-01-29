@@ -2,7 +2,7 @@
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
 
 V. U L T I M A T E
-GLOBALIZE CSS   V.Ultimate
+GLOBALIZE CSS  -  V.Ultimate
 MIT License Copyright (c) Fabien Conéjéro / FC84
 
 :root{  font-family:'....','.....';caret-color:transparent;   }
@@ -19,7 +19,7 @@ MIT License Copyright (c) Fabien Conéjéro / FC84
 ____________________________________
 
 V. B A S I C
-GLOBALIZE CSS   V.Basic                                                           
+GLOBALIZE CSS  -  V.Basic                                                           
 MIT License Copyright (c) Fabien Conéjéro / FC84                           
 
 :root{ font-family:'....','.....';caret-color:transparent;  }
