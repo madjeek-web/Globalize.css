@@ -1,14 +1,6 @@
 # Globalize.css - MIT License Copyright (c) Fabien Conéjéro / FC84
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
 
-DEMO :
-
-<div class="pf vh">
-  <p class="c03 fsn usn">
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-   Aenean feugiat laoreet diam sed vestibulum.
- </p>
-</div>
 ____________________________________
 
 V. ULTIMATE - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
