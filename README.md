@@ -3,10 +3,10 @@ Globalize.css - Be able to work and rework with common, useful and practical CSS
 /*________________________________________________________________________________________________________________*/
 
 V.ULTIMATE
-//
-/*  GLOBALIZE CSS   V.Ultimate                                                           */
-/*  MIT License Copyright (c) Fabien Conéjéro / FC84                           */
-/*/////////////////////////////////////////////////////////////////////////////*/
+
+/*  GLOBALIZE CSS   V.Ultimate
+/*  MIT License Copyright (c) Fabien Conéjéro / FC84
+/*
 :root{ font-family:'....','.....';caret-color:transparent;   }
 
 .dpi{display:inline;}
