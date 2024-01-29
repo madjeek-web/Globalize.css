@@ -2,9 +2,8 @@
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
 
 V. U L T I M A T E
-
-/*___________  GLOBALIZE CSS   V.Ultimate
-/ MIT License Copyright (c) Fabien Conéjéro / FC84
+GLOBALIZE CSS   V.Ultimate
+MIT License Copyright (c) Fabien Conéjéro / FC84
 
 :root{  font-family:'....','.....';caret-color:transparent;   }
 
@@ -17,16 +16,13 @@ V. U L T I M A T E
 .ha{height:auto}
 .tc{text-align:center}.tl{text-align:left}.tj{text-align:justify}.tnet{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fsn{font-style:normal}
-
-/*________________________________________________________________________________________________________________*/
-/*________________________________________________________________________________________________________________*/
+____________________________________
 
 V. B A S I C
-/*________________________________________________________________________________________________________________*/
-/  GLOBALIZE CSS                                                              
-/  MIT License Copyright (c) Fabien Conéjéro / FC84                           
-/*________________________________________________________________________________________________________________*/
-:root{ font-family:'....','.....';caret-color:transparent;   }
+GLOBALIZE CSS   V.Basic                                                           
+MIT License Copyright (c) Fabien Conéjéro / FC84                           
+
+:root{ font-family:'....','.....';caret-color:transparent;  }
 
 .dp-i{display:inline;}
 .dp-n{display:none;}.v-v{visibility:visible}.v-h{visibility:hidden}
@@ -37,3 +33,4 @@ V. B A S I C
 .h-a{height:auto}
 .t-c{text-align:center}.t-l{text-align:left}.t-j{text-align:justify}.t-net{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fs-n{font-style:normal}
+____________________________________
