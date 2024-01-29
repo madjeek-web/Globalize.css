@@ -4,10 +4,10 @@ Globalize.css - Be able to work and rework with common, useful and practical CSS
 
 V.ULTIMATE
 
-/*  GLOBALIZE CSS   V.Ultimate
-/*  MIT License Copyright (c) Fabien Conéjéro / FC84
-/*
-:root{ font-family:'....','.....';caret-color:transparent;   }
+/*___________  GLOBALIZE CSS   V.Ultimate
+/ MIT License Copyright (c) Fabien Conéjéro / FC84
+/*________________________________________________________________________________________________________________*
+:root{  font-family:'....','.....';caret-color:transparent;   }
 
 .dpi{display:inline;}
 .dpn{display:none;}.vv{visibility:visible}.vh{visibility:hidden}
@@ -20,12 +20,13 @@ V.ULTIMATE
 .fsn{font-style:normal}
 
 /*________________________________________________________________________________________________________________*/
+/*________________________________________________________________________________________________________________*/
 
 V.BASIC
-/*/////////////////////////////////////////////////////////////////////////////*/
-/*  GLOBALIZE CSS                                                              */
-/*  MIT License Copyright (c) Fabien Conéjéro / FC84                           */
-/*/////////////////////////////////////////////////////////////////////////////*/
+/*________________________________________________________________________________________________________________*/
+/  GLOBALIZE CSS                                                              
+/  MIT License Copyright (c) Fabien Conéjéro / FC84                           
+/*________________________________________________________________________________________________________________*/
 :root{ font-family:'....','.....';caret-color:transparent;   }
 
 .dp-i{display:inline;}
