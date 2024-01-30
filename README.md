@@ -21,6 +21,10 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .bc     { background :  green } /* v.U */
 .bgc    { background-color : green } /* v.B */
 
+.vv     { visibility : visible }
+.vh     { visibility : hidden }
+.vc     { visibility : collapse }
+
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
  ____________________________________
