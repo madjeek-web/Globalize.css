@@ -3,9 +3,11 @@ Globalize.css - Be able to work and rework with common, useful and practical CSS
 _____________________________________
 
 DEMO :
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto">
 <pre>
 <div class="pf"><p class="tc usn c03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
 </pre>
+</div>
 Everyone will be able to quickly understand that the div is fixed with the text in black not selectable by the visitor and centered.
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
