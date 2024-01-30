@@ -1,7 +1,26 @@
 # Globalize.css - MIT License Copyright (c) Fabien Conéjéro / FC84
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
+_____________________________________
 
-____________________________________
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
+
+GETTING STARTED/ EASY LEARNING GUIDE/ HELPER :
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
+
+.pf      { position : fixed }
+.pr      { position : relative }
+.pa      { position : absolute }
+
+.dpi    { display : inline }
+.dpn    { display : none }
+
+.tc     { text-align : center }
+.tl     { text-align : left }
+.tj     { text-align : justify }
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
+
+ ____________________________________
 
 V. ULTIMATE - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
 ____________________________________
