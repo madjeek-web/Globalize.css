@@ -13,10 +13,29 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 
 .dpi    { display : inline }
 .dpn    { display : none }
+.dpb    { display : block }
+.dpri   { display : run-in }
 
 .tc     { text-align : center }
 .tl     { text-align : left }
 .tj     { text-align : justify }
+
+.jcs    { justify-content: start }
+.jcc    { justify-content: center }
+.jcsb   { justify-content: space-between }
+.jcsa   { justify-content: space-around }
+.jcse   { justify-content: space-evenly }
+.jce    { justify-content: end }
+
+.jcfs   { justify-content: flex-start }
+.jcfe   { justify-content: flex-end }
+.jcl    { justify-content: left }
+.jcr    { justify-content: right }
+.jcn    { justify-content: normal }
+.jcsh   { justify-content: stretch }
+.jcit   { justify-content: inherit }
+.jcil   { justify-content: initial }
+.jcut   { justify-content: unset }
 
 .bc     { background :  green } /* v.U */
 .bgc    { background-color : green } /* v.B */
