@@ -18,7 +18,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .tl     { text-align : left }
 .tj     { text-align : justify }
 
-.bgc: { background-color: red }
+.bgc    { background-color: red }
 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
