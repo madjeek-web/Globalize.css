@@ -18,8 +18,8 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .tl     { text-align : left }
 .tj     { text-align : justify }
 
-.bc     { background: green } /* v.U */
-.bgc    { background-color: green } /* v.B */
+.bc     { background :  green } /* v.U */
+.bgc    { background-color : green } /* v.B */
 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
