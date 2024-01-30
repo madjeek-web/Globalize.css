@@ -3,7 +3,7 @@ Globalize.css - Be able to work and rework with common, useful and practical CSS
 _____________________________________
 
 DEMO :
-```css
+```html
 <div class="pf"><p class="tc usn c03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
 ```
 Everyone will be able to quickly understand that the div is fixed with the text in black not selectable by the visitor and centered.
@@ -11,7 +11,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 
 GETTING STARTED/ EASY LEARNING GUIDE/ HELPER :
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
-```ruby
+```css
 .pf      { position : fixed }
 .pr      { position : relative }
 .pa      { position : absolute }
@@ -55,7 +55,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 
 V. ULTIMATE - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
 ____________________________________
-```ruby
+```css
 
 :root{  font-family:'....','.....';caret-color:transparent;   }
 
@@ -77,7 +77,7 @@ ____________________________________
 
 V. BASIC - GLOBALIZE CSS  - MIT License Copyright (c) Fabien Conéjéro / FC84  
 ____________________________________
-```ruby
+```css
 :root{ font-family:'....','.....';caret-color:transparent;  }
 
 .dp-i{display:inline;}
