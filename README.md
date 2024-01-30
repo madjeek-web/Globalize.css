@@ -11,7 +11,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 
 GETTING STARTED/ EASY LEARNING GUIDE/ HELPER :
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
-
+```ruby
 .pf      { position : fixed }
 .pr      { position : relative }
 .pa      { position : absolute }
@@ -48,14 +48,14 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .vv     { visibility : visible }
 .vh     { visibility : hidden }
 .vc     { visibility : collapse }
-
+```
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
  ____________________________________
 
 V. ULTIMATE - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
 ____________________________________
-
+```ruby
 
 :root{  font-family:'....','.....';caret-color:transparent;   }
 
@@ -68,7 +68,7 @@ ____________________________________
 .ha{height:auto}
 .tc{text-align:center}.tl{text-align:left}.tj{text-align:justify}.tnet{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fsn{font-style:normal}
-
+```
 ____________________________________
 ____________________________________
 ____________________________________
@@ -76,9 +76,8 @@ ____________________________________
 ____________________________________
 
 V. BASIC - GLOBALIZE CSS  - MIT License Copyright (c) Fabien Conéjéro / FC84  
-
 ____________________________________
-
+```ruby
 :root{ font-family:'....','.....';caret-color:transparent;  }
 
 .dp-i{display:inline;}
@@ -90,4 +89,5 @@ ____________________________________
 .h-a{height:auto}
 .t-c{text-align:center}.t-l{text-align:left}.t-j{text-align:justify}.t-net{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fs-n{font-style:normal}
+```
 ____________________________________
