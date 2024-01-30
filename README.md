@@ -2,6 +2,11 @@
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
 _____________________________________
 
+DEMO :
+
+<div class="pf"><p class="tc usn c03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+
+Everyone will be able to quickly understand that the div is fixed with the text in black not selectable by the visitor and centered.
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
 GETTING STARTED/ EASY LEARNING GUIDE/ HELPER :
