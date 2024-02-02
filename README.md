@@ -15,6 +15,12 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .pf      { position : fixed }
 .pr      { position : relative }
 .pa      { position : absolute }
+.psc     { position : static }
+.psy     { position : sticky }
+.pit     { position : inherit }
+.pil     { position : initial }
+.prt     { position : revert }
+.put     { position : unset }
 
 .dpi    { display : inline }
 .dpn    { display : none }
@@ -48,6 +54,9 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .vv     { visibility : visible }
 .vh     { visibility : hidden }
 .vc     { visibility : collapse }
+.vit    { visibility : inherit }
+.vil    {visibility : initial }
+.vut    {visibility : unset }
 ```
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 
