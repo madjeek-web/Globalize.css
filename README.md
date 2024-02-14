@@ -48,7 +48,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .jcc    { justify-content : center }
 .jcsb   { justify-content : space-between }
 .jcsa   { justify-content : space-around }
-.jcse   { justify-content:  space-evenly }
+.jcse   { justify-content :  space-evenly }
 .jce    { justify-content : end }
 
 .jcfs   { justify-content : flex-start }
