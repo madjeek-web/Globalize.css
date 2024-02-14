@@ -12,6 +12,10 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 GETTING STARTED/ EASY LEARNING GUIDE/ HELPER :
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
 ```css
+
+.c03     { color : #000 }
+.cf3     { color : #fff }
+
 .pf      { position : fixed }
 .pr      { position : relative }
 .pa      { position : absolute }
@@ -30,23 +34,32 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .tc     { text-align : center }
 .tl     { text-align : left }
 .tj     { text-align : justify }
+.fw1    { font-weight : 100 }
+.fw2    { font-weight : 200 }
+.fw4    { font-weight : 400 }
+.fw6    { font-weight : 600 }
+.fw8    { font-weight : 800 }
+.ttc    { text-transform : capitalize }
+.ttu    { text-transform : uppercase }
+.ttn    { text-transform : none }
+.wwbw   { word-wrap : break-word }
 
-.jcs    { justify-content: start }
-.jcc    { justify-content: center }
-.jcsb   { justify-content: space-between }
-.jcsa   { justify-content: space-around }
-.jcse   { justify-content: space-evenly }
-.jce    { justify-content: end }
+.jcs    { justify-content : start }
+.jcc    { justify-content : center }
+.jcsb   { justify-content : space-between }
+.jcsa   { justify-content : space-around }
+.jcse   { justify-content:  space-evenly }
+.jce    { justify-content : end }
 
-.jcfs   { justify-content: flex-start }
-.jcfe   { justify-content: flex-end }
-.jcl    { justify-content: left }
-.jcr    { justify-content: right }
-.jcn    { justify-content: normal }
-.jcsh   { justify-content: stretch }
-.jcit   { justify-content: inherit }
-.jcil   { justify-content: initial }
-.jcut   { justify-content: unset }
+.jcfs   { justify-content : flex-start }
+.jcfe   { justify-content : flex-end }
+.jcl    { justify-content : left }
+.jcr    { justify-content : right }
+.jcn    { justify-content : normal }
+.jcsh   { justify-content : stretch }
+.jcit   { justify-content : inherit }
+.jcil   { justify-content : initial }
+.jcut   { justify-content : unset }
 
 .bc     { background :  green } /* v.U */
 .bgc    { background-color : green } /* v.B */
