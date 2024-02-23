@@ -9,8 +9,9 @@ This project is just started, it is not complete, as the css class names are ver
 ____
 Globalize css is easy to use and quick to tame.
 ___
-Download Globalize.css - V.Ultimate :
-https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css
+Download Globalize.css
+`[V.Ultimate](https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css)`
+
 Link file :
 https://raw.githubusercontent.com/madjeek-web/Globalize.css/main/GLOBALIZE-CSS-V.ULTIMATE.css
 _____________________________________
