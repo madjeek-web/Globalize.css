@@ -10,7 +10,7 @@ ____
 Globalize css is easy to use and quick to tame.
 ___
 Download Globalize.css
-`[V.Ultimate](https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css)`
+`https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css`
 
 Link file :
 https://raw.githubusercontent.com/madjeek-web/Globalize.css/main/GLOBALIZE-CSS-V.ULTIMATE.css
