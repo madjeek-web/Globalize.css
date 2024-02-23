@@ -8,6 +8,7 @@ This project is just started, it is not complete, as the css class names are ver
 ✉ encrypt-free.74.mq2fl@aleeas.com
 ____
 Globalize css is easy to use and quick to tame.
+___
 Download Globalize.css - V.Ultimate :
 https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css
 Link file :
