@@ -6,6 +6,9 @@ We can easily imagine several cases where Globalize is very useful: for example 
 You can use Globalize.css for all your personal web projects and client projects, it is free.
 This project is just started, it is not complete, as the css class names are very logical and simple you can easily complete and intuitively guess the rest. You can email me if you want to help me complete or perfect this project.
 ✉ encrypt-free.74.mq2fl@aleeas.com
+____
+Download Globalize.css - V.Ultimate
+https://raw.githubusercontent.com/madjeek-web/Globalize.css/main/GLOBALIZE-CSS-V.ULTIMATE.css
 _____________________________________
 
 DEMO :
