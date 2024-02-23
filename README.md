@@ -2,6 +2,7 @@
 
 # Globalize.css - MIT License Copyright (c) Fabien Conéjéro / FC84
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
+We can easily imagine several cases where Globalize is very useful: for example as part of a website redesign a few years later. Having made the choice as a webmaster to have worked with this project may allow you to work on the new version of the site, even if it is a collaborator who redevelops the new version, this employee will be able to understand your rating and the class names very simply.
 _____________________________________
 
 DEMO :
