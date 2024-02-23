@@ -9,6 +9,10 @@ This project is just started, it is not complete, as the css class names are ver
 ____
 Globalize css is easy to use and quick to tame.
 ___
+Globalize reduces the amount of code written in your files or pages, so it is useful to load pages faster in web browsers, it is wise to work with globalize rather than using many values in the root. Because you have to repeat your values in css and css class in html ( three places so ).
+With Globalize css only in two places.
+With Globalize css, if for many html elements have the same class that are repeated too often, it will be useful to create class combinations, creating your own class, always in order to minimize your code.
+___
 Download Globalize.css
 https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css
 ___
