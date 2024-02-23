@@ -1,5 +1,3 @@
-![cats-no-tooltip](https://user-images.githubusercontent.com/83957788/174462019-bdbf9f6d-db8b-48bc-a1f0-2908ed6fe5dd.jpg)
-
 ![globalize-css-icon](https://raw.githubusercontent.com/madjeek-web/Globalize.css/main/globalize-css-icon.png)
 
 # Globalize.css - MIT License Copyright (c) Fabien Conéjéro / FC84
