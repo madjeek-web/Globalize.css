@@ -7,7 +7,9 @@ You can use Globalize.css for all your personal web projects and client projects
 This project is just started, it is not complete, as the css class names are very logical and simple you can easily complete and intuitively guess the rest. You can email me if you want to help me complete or perfect this project.
 ✉ encrypt-free.74.mq2fl@aleeas.com
 ____
-Globalize css is easy to use and quick to tame.
+Globalize css is easy to use and quick to tame. 
+You can combine Globalize css with : normalize.css - in a single css file.
+https://github.com/necolas/normalize.css : - MIT License Copyright (c) Nicolas Gallagher and Jonathan Neal  
 ___
 Globalize reduces the amount of code written in your files or pages, so it is useful to load pages faster in web browsers, it is wise to work with globalize rather than using many values in the root. Because you have to repeat your values in css and css class in html ( three places so ).
 With Globalize css only in two places.
