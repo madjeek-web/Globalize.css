@@ -18,8 +18,8 @@
 .jcit{justify-content:inherit}.jcil{justify-content:initial}.jcut{justify-content:unset}
 .bc{background:green}/*v.U*/.bgc{background-color:green}/*v.B*/
 .bgiit{background-image:inherit}.bgiil{background-image:initial}.bgir{background-image:revert}.bgiu{background-image:unset}
+.bgas{background-attachment:scroll}.bgaf{background-attachment:fixed}.bgal{background-attachment:local}.bgait{background-attachment:inherit}.bgail{background-attachment:initial}.bgar{background-attachment:revert}.bgau{background-attachment:unset}
 .bgcbb{background-clip:border-box}.bgcpb{background-clip:padding-box}.bgccb{background-clip:content-box}.bgct{background-clip:text}.bgcit{background-clip:inherit}.bgcil{background-clip:initial}.bgcu{background-clip:unset}
 .bgobb{background-origin:border-box}.bgopb{background-origin:padding-box}.bgocb{background-origin:content-box}.bgoit{background-origin:inherit}.bgoil{background-origin:initial}.bgor{background-origin:revert}.bgou{background-origin:unset}
-
 
 .vv{visibility:visible}.vh{visibility:hidden}.vc{visibility:collapse}.vit{visibility:inherit}.vil{visibility:initial}.vut{visibility:unset}
