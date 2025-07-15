@@ -15,7 +15,7 @@ With Globalize css only in two places.
 With Globalize css, if for many html elements have the same class that are repeated too often, it will be useful to create class combinations, creating your own class, always in order to minimize your code.
 ___
 
-Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on: 15 July 2025
+Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on : 15 July 2025
 https://github.com/madjeek-web/Globalize.css/tree/main/dist
 ___
 Download Globalize.css
