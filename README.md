@@ -17,8 +17,6 @@ ___
 
 Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on : 15 July 2025
 https://github.com/madjeek-web/Globalize.css/tree/main/dist
-
-CDN : <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/madjeek-web/Globalize.css@main/dist/globalize.min.css">
 ___
 Download Globalize.css
 https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css
