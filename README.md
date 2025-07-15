@@ -14,6 +14,10 @@ Globalize reduces the amount of code written in your files or pages, so it is us
 With Globalize css only in two places.
 With Globalize css, if for many html elements have the same class that are repeated too often, it will be useful to create class combinations, creating your own class, always in order to minimize your code.
 ___
+
+Download the latest version of Globalize.css - New update on: 15 July 2025
+https://github.com/madjeek-web/Globalize.css/tree/main/dist
+___
 Download Globalize.css
 https://github.com/madjeek-web/Globalize.css/blob/main/GLOBALIZE-CSS-V.ULTIMATE.css
 ___
