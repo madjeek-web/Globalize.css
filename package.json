@@ -1,15 +1,63 @@
 {
   "name": "globalize.css",
-  "version": "ultimate",
-  "description": "Globalize.css Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names",
-  "main": "globalize.css",
-  "style": "globalize.css",
+  "version": "6.0.0",
+  "description": "A utility-first CSS framework with intuitive, minimal, and collaborative class names for faster web development. Optimized for readability and cross-team workflows.",
+  "main": "dist/globalize.min.css",
+  "style": "dist/globalize.css",
   "files": [
-    "LICENSE.md",
-    "globalize.css"
+    "dist/*.css",
+    "LICENSE.md"
   ],
-  "repository": "madjeek-web/Globalize.css",
+  "scripts": {
+    "build": "cleancss -o dist/globalize.min.css src/globalize.css",
+    "lint": "stylelint src/**/*.css",
+    "test": "echo \"No tests specified\"",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madjeek-web/Globalize.css.git"
+  },
+  "keywords": [
+    "css",
+    "utility",
+    "framework",
+    "frontend",
+    "web",
+    "responsive",
+    "collaboration",
+    "minimal",
+    "performance",
+    "normalize",
+    "globalize",
+    "fc84"
+  ],
+  "author": "Fabien Conéjéro (FC84)",
   "license": "MIT",
-  "bugs": "https://github.com/###/issues",
-  "homepage": "https://github.com/madjeek-web/Globalize.css"
+  "bugs": {
+    "url": "https://github.com/madjeek-web/Globalize.css/issues"
+  },
+  "homepage": "https://github.com/madjeek-web/Globalize.css#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "stylelint": "^15.10.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "peerDependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "contributors": [
+    {
+      "name": "Fabien Conéjéro",
+      "email": "web-agency@madjeek.fr",
+      "url": "https://github.com/madjeek-web"
+    }
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/madjeek-web"
+  }
 }
