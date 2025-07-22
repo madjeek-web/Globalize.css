@@ -1,10 +1,21 @@
 ![globalize-css-icon](https://raw.githubusercontent.com/madjeek-web/Globalize.css/main/globalize-css-icon.png)
 
 # Globalize.css - MIT License Copyright (c) Fabien Conéjéro / FC84
+___
+
+About : 
 Globalize.css - Be able to work and rework with common, useful and practical CSS class names to work between collaborators on web projects and speak the same language to go faster, to understand each other, to make working with several very easy, optimize and minimize code with short, intuitive and logical names.
+
+Tags :
+#css #website #web #mit #webpage #network #class #collaboration #project #generic #mit-license #globalize #base #webdeveloper #minimaliz #fc84 #globalize-css
+___
 We can easily imagine several cases where Globalize is very useful: for example as part of a website redesign a few years later. Having made the choice as a webmaster to have worked with this project may allow you to work on the new version of the site, even if it is a collaborator who redevelops the new version, this employee will be able to understand your rating and the class names very simply.
 You can use Globalize.css for all your personal web projects and client projects, it is free.
 Since the CSS class names are very logical and simple, you can easily complete this project intuitively according to your needs.
+____
+
+Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on : 15 July 2025
+https://github.com/madjeek-web/Globalize.css/tree/main/dist
 ____
 Globalize css is easy to use and quick to tame. 
 You can combine Globalize css with : normalize.css - in a single css file.
@@ -13,10 +24,6 @@ ___
 Globalize reduces the amount of code written in your files or pages, so it is useful to load pages faster in web browsers, it is wise to work with globalize rather than using many values in the root. Because you have to repeat your values in css and css class in html ( three places so ).
 With Globalize css only in two places.
 With Globalize css, if for many html elements have the same class that are repeated too often, it will be useful to create class combinations, creating your own class, always in order to minimize your code.
-___
-
-Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on : 15 July 2025
-https://github.com/madjeek-web/Globalize.css/tree/main/dist
 
 ___
 
