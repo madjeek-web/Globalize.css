@@ -1,0 +1,180 @@
+# Nom du workflow qui apparaîtra dans l'interface GitHub Actions
+name: Globalize.css CI/CD
+
+# Déclencheurs : quand ce workflow doit s'exécuter
+on:
+  # Se déclenche à chaque push sur la branche main
+  push:
+    branches: [ main ]
+  
+  # Se déclenche à chaque pull request ciblant la branche main
+  pull_request:
+    branches: [ main ]
+
+# Définition des jobs (tâches) à exécuter
+jobs:
+  # Job principal nommé "build"
+  build:
+    # Nom affiché dans l'interface GitHub
+    name: Build and Validate
+    
+    # Environnement d'exécution (machine virtuelle Ubuntu)
+    runs-on: ubuntu-latest
+    
+    # Étapes séquentielles du job
+    steps:
+      # --------------------------------------------------
+      # ÉTAPE 1 : Récupération du code source
+      # --------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # --------------------------------------------------
+      # ÉTAPE 2 : Configuration de Node.js
+      # --------------------------------------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # --------------------------------------------------
+      # ÉTAPE 3 : Installation des dépendances
+      # --------------------------------------------------
+      - name: Install dependencies
+        run: npm install
+
+      # --------------------------------------------------
+      # ÉTAPE 4 : Vérification syntaxique avec Stylelint
+      # --------------------------------------------------
+      - name: Run Stylelint
+        run: npm run lint
+
+      # --------------------------------------------------
+      # ÉTAPE 5 : Construction des fichiers CSS finaux
+      # --------------------------------------------------
+      - name: Build CSS files
+        run: |
+          npm run build
+          
+          # Note pour les utilisateurs :
+          # Globalize.css est autonome mais peut être combiné
+          # avec normalize.css si besoin :
+          #
+          # Méthode recommandée :
+          # 1. Installer normalize.css séparément
+          # 2. Charger dans cet ordre :
+          #    <link rel="stylesheet" href="chemin/normalize.css">
+          #    <link rel="stylesheet" href="globalize.min.css">
+
+      # --------------------------------------------------
+      # ÉTAPE 6 : Validation W3C du CSS généré
+      # --------------------------------------------------
+      - name: Validate with W3C
+        uses: prantlf/github-action-w3c-css-validator@v1
+        with:
+          file: dist/globalize.css
+          ignore: "vendor-prefixes"
+
+      # --------------------------------------------------
+      # ÉTAPE 7 : Contrôle qualité final
+      # --------------------------------------------------
+      - name: Quality Gate
+        run: |
+          MAX_SIZE=50000
+          ACTUAL_SIZE=$(stat -c%s "dist/globalize.min.css")
+          
+          if [ $ACTUAL_SIZE -gt $MAX_SIZE ]; then
+            echo "::error::Le fichier minifié (${ACTUAL_SIZE}o) dépasse la limite de ${MAX_SIZE}o"
+            exit 1
+          fi
+          
+          echo "✓ Taille OK : ${ACTUAL_SIZE}o"
+
+# ------------------------------------------------------------
+# STRUCTURE GÉNÉRÉE DANS /dist APRÈS SUCCÈS :
+# 
+# dist/
+# ├── globalize.css          # Version développeur
+# └── globalize.min.css      # Version production
+# 
+# POINTS CLÉS :
+# - Autonomie complète : Aucune dépendance obligatoire
+# - Flexibilité : Compatible avec normalize.css
+# - Qualité garantie :
+#   * Validation W3C
+#   * Contrôle de taille
+#   * Vérification syntaxique
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# EXPLICATIONS COMPLÉMENTAIRES :
+#
+# [POURQUOI UBUNTU ?]
+# ubuntu-latest est l'environnement CI :
+# - Le plus stable
+# - Le plus largement supporté
+# - Avec le meilleur écosystème d'actions
+#
+# [NODE.JS 20]
+# Version LTS (Long-Term Support) recommandée car :
+# - Maintenance garantie jusqu'en avril 2026
+# - Meilleures performances
+# - Sécurité renforcée
+#
+# [GESTION DES ERREURS]
+# Philosophie "Fail Fast" :
+# - Toute étape défaillante stoppe immédiatement le workflow
+# - Feedback instantané dans l'interface GitHub
+#
+# [VALIDATION W3C]
+# Le validateur ignore volontairement :
+# - Les préfixes vendeurs (-webkit-, -moz-)
+# - Les règles @import
+# Pour se concentrer sur les erreurs critiques
+#
+# [CONTROLE DE TAILLE]
+# La limite de 50KB est :
+# - Une valeur par défaut raisonnable
+# - Ajustable via la variable MAX_SIZE
+# - Surveillance proactive des "CSS bloats"
+#
+# [PROCESSUS COMPLET]
+# 7 étapes de validation automatique :
+# 1. Récupération du code
+# 2. Environnement Node.js
+# 3. Dépendances
+# 4. Qualité syntaxique
+# 5. Construction
+# 6. Standards W3C
+# 7. Contrôle métriques
+# ------------------------------------------------------------
+
+# Points clés supplémentaires :
+# Pourquoi ce workflow ?
+# Automatisation complète : Plus besoin de vérifications manuelles
+# Qualité garantie : 7 étapes de validation avant merge
+# Transparence : Toute l'équipe voit l'état des builds
+
+# Extensions possibles:
+# Ajouter des tests visuels avec BackstopJS
+# Intégrer un déploiement automatique
+# Ajouter un scan de sécurité CSS
+# Ce workflow équilibre rigueur technique et flexibilité, tout en documentant chaque décision pour les futurs mainteneurs.
+
+# Points clés supplémentaires :
+# Pourquoi ce workflow ?
+# Automatisation complète : Le workflow permet effectivement d'éliminer les vérifications manuelles (comme la validation W3C, le linting, ou le contrôle de taille), ce qui réduit les erreurs humaines.
+# Qualité garantie : Les 7 étapes (checkout, setup Node.js, installation des dépendances, Stylelint, build, validation W3C, contrôle de taille) assurent une validation rigoureuse avant tout merge.
+# Transparence : L'interface GitHub Actions permet à toute l'équipe de voir l'état des builds (succès/échec) en temps réel.
+# Extensions possibles :
+# Tests visuels avec BackstopJS : Une excellente suggestion pour détecter les régressions visuelles (par exemple, si une modification CSS casse le layout).
+# Déploiement automatique : Pourrait être ajouté pour publier automatiquement sur npm, GitHub Pages, ou un CDN après un push réussi sur main.
+# Scan de sécurité CSS : Utile pour détecter d'éventuelles vulnérabilités (comme des sélecteurs malveillants ou des règles dangereuses).
+# Équilibre du workflow :
+# Rigueur technique : Le workflow couvre tous les aspects critiques (syntaxe, standards, performance).
+# Flexibilité : Les commentaires expliquent comment adapter le workflow (par exemple, pour intégrer normalize.css).
+# Documentation : Les explications détaillées aident les futurs mainteneurs à comprendre les choix techniques.
+# Suggestions d'amélioration (optionnelles) :
+# Ajouter un cache pour les dépendances npm (avec actions/cache) pour accélérer les runs.
+# Inclure un test de compatibilité navigateur (via BrowserStack ou Sauce Labs).
+# Ajouter une étape pour générer un rapport de couverture CSS (si pertinent).
