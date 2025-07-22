@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globalize.css - The Ultimate CSS Framework</title>
+    <style>
+        /* Insert your complete Globalize.css here */
+        /* For this demo, we'll include just the essential classes */
+        
+        /* Core Styles */
+        :root {
+            --primary: #3a86ff;
+            --primary-dark: #2667cc;
+            --secondary: #8338ec;
+            --accent: #ff006e;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+        }
+        
+        /* Color System */
+        .c000{color:#000}.c111{color:#111}.c222{color:#222}.c333{color:#333}.c444{color:#444}
+        .c555{color:#555}.c666{color:#666}.c777{color:#777}.c888{color:#888}.c999{color:#999}
+        .cfff{color:#fff}.cf0{color:#f0f0f0}
+        .c00f{color:#00f}.cf00{color:#f00}.c0f0{color:#0f0}
+        .c-primary{color:var(--primary)}.c-secondary{color:var(--secondary)}.c-accent{color:var(--accent)}
+        
+        /* Backgrounds */
+        .bg000{background-color:#000}.bgfff{background-color:#fff}
+        .bg00f{background-color:#00f}.bgf00{background-color:#f00}.bg0f0{background-color:#0f0}
+        .bg-primary{background-color:var(--primary)}.bg-secondary{background-color:var(--secondary)}.bg-accent{background-color:var(--accent)}
+        .bg-dark{background-color:var(--dark)}.bg-light{background-color:var(--light)}
+        .bg-gradient-primary{background:linear-gradient(135deg, var(--primary), var(--secondary))}
+        
+        /* Typography */
+        .ffss{font-family:'Inter', system-ui, sans-serif}.ffse{font-family:serif}.ffmo{font-family:monospace}
+        .fs12{font-size:12px}.fs14{font-size:14px}.fs16{font-size:16px}.fs18{font-size:18px}.fs20{font-size:20px}
+        .fs24{font-size:24px}.fs32{font-size:32px}.fs48{font-size:48px}.fs64{font-size:64px}
+        .fw3{font-weight:300}.fw4{font-weight:400}.fw5{font-weight:500}.fw6{font-weight:600}.fw7{font-weight:700}
+        .lh1-5{line-height:1.5}.lh1-8{line-height:1.8}
+        .tc{text-align:center}.tl{text-align:left}.tr{text-align:right}
+        .ttu{text-transform:uppercase}.ttc{text-transform:capitalize}
+        
+        /* Layout */
+        .dpb{display:block}.dpi{display:inline}.dpib{display:inline-block}.dpf{display:flex}.dpg{display:grid}
+        .fdc{flex-direction:column}.fdr{flex-direction:row}
+        .jcc{justify-content:center}.jcsb{justify-content:space-between}
+        .aic{align-items:center}.aife{align-items:flex-end}
+        .gtc3{grid-template-columns:repeat(3,1fr)}.gtr2{grid-template-rows:repeat(2,1fr)}
+        .gap10{gap:10px}.gap20{gap:20px}
+        
+        /* Spacing */
+        .m0{margin:0}.m10{margin:10px}.m20{margin:20px}.m30{margin:30px}
+        .mt10{margin-top:10px}.mt20{margin-top:20px}.mt30{margin-top:30px}
+        .mb10{margin-bottom:10px}.mb20{margin-bottom:20px}.mb30{margin-bottom:30px}
+        .p0{padding:0}.p10{padding:10px}.p20{padding:20px}.p30{padding:30px}
+        .pt40{padding-top:40px}.pb40{padding-bottom:40px}
+        
+        /* Borders */
+        .bds{border-style:solid}.bdd{border-style:dashed}
+        .bw1{border-width:1px}.bw2{border-width:2px}
+        .bdc000{border-color:#000}.bdcfff{border-color:#fff}
+        .rad5{border-radius:5px}.rad10{border-radius:10px}.rad20{border-radius:20px}.rad50{border-radius:50%}
+        
+        /* Effects */
+        .sd1{box-shadow:0 1px 3px rgba(0,0,0,0.12)}.sd3{box-shadow:0 10px 15px rgba(0,0,0,0.1)}
+        .sd5{box-shadow:0 25px 50px rgba(0,0,0,0.25)}
+        .trn{transition:all 0.3s ease}.trf{transition:all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)}
+        .op90{opacity:0.9}.op100{opacity:1}
+        .scale1{transform:scale(1)}.scale1-1:hover{transform:scale(1.1)}
+        
+        /* Animations */
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+        .anfadein{animation:fadeIn 0.6s ease forwards}
+        .anslideup{animation:slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards}
+        .anpulse{animation:pulse 2s infinite}
+        
+        /* Custom styles for demo page */
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #3a86ff, #8338ec);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(58, 134, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .nav-link {
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .stats-item {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .stats-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            background-color: var(--primary);
+            border-radius: 50%;
+        }
+        
+        .code-block {
+            background-color: #1a1a2e;
+            color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: monospace;
+            position: relative;
+        }
+        
+        .code-block::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ff5f56;
+            box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .grid-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .fs48 { font-size: 36px; }
+            .fs32 { font-size: 24px; }
+            .hero-content { padding: 60px 0; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="bg-dark p20 dpf jcsb aic" style="position: sticky; top: 0; z-index: 1000;">
+        <div class="dpf aic gap20">
+            <span class="fs24 fw6 cfff">Globalize.css</span>
+            <span class="fs14 cfff op90">v6.0</span>
+        </div>
+        <div class="dpf aic gap30">
+            <a href="#features" class="cfff nav-link trn">Features</a>
+            <a href="#examples" class="cfff nav-link trn">Examples</a>
+            <a href="#documentation" class="cfff nav-link trn">Docs</a>
+            <a href="#get-started" class="btn btn-secondary trn">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero pt40 pb40">
+        <div class="hero-content dpf fdc aic tc p30" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <h1 class="fs48 fw7 cfff mb20 anslideup">The Ultimate CSS Framework</h1>
+            <p class="fs20 cfff op90 mb30 lh1-8" style="max-width: 700px;">Globalize.css is a comprehensive utility-first CSS framework with 1000+ classes for rapid UI development. Built for modern web applications.</p>
+            <div class="dpf gap20">
+                <a href="#get-started" class="btn btn-primary trf scale1 scale1-1">Get Started</a>
+                <a href="#documentation" class="btn btn-secondary trf scale1 scale1-1">Documentation</a>
+            </div>
+            <div class="mt40 anfadein" style="animation-delay: 0.3s;">
+                <div class="code-block tl">
+                    <span class="c-accent">npm install</span> globalize-css
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="p30 bg-light">
+        <div class="grid-demo" style="max-width: 1200px; margin: 0 auto;">
+            <div class="feature-card p20 tc">
+                <h3 class="fs32 fw6 c-primary mb10">1000+</h3>
+                <p class="fs16 c333">Utility Classes</p>
+            </div>
+            <div class="feature-card p20 tc">
+                <h3 class="fs32 fw6 c-secondary mb10">25kb</h3>
+                <p class="fs16 c333">Minified + Gzipped</p>
+            </div>
+            <div class="feature-card p20 tc">
+                <h3 class="fs32 fw6 c-accent mb10">0 JS</h3>
+                <p class="fs16 c333">Pure CSS Solution</p>
+            </div>
+            <div class="feature-card p20 tc">
+                <h3 class="fs32 fw6 c-primary mb10">100%</h3>
+                <p class="fs16 c333">Customizable</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="p40 bg-white">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="fs32 fw6 tc mb10">Powerful Features</h2>
+            <p class="fs18 c666 tc mb40" style="max-width: 700px; margin-left: auto; margin-right: auto;">Everything you need to build modern, responsive interfaces without writing custom CSS</p>
+            
+            <div class="grid-demo">
+                <div class="feature-card p30">
+                    <div class="fs48 c-primary mb20">🎨</div>
+                    <h3 class="fs20 fw6 mb10">Comprehensive Color System</h3>
+                    <p class="fs16 c666 lh1-5">Predefined color classes for text and backgrounds with full opacity control.</p>
+                    <div class="mt20 dpf flex-wrap gap10">
+                        <span class="p10 bg-primary cfff rad5">.bg-primary</span>
+                        <span class="p10 bg-secondary cfff rad5">.bg-secondary</span>
+                        <span class="p10 bg-accent cfff rad5">.bg-accent</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card p30">
+                    <div class="fs48 c-secondary mb20">📱</div>
+                    <h3 class="fs20 fw6 mb10">Responsive Layouts</h3>
+                    <p class="fs16 c666 lh1-5">Flexbox and Grid utilities to create any layout imaginable.</p>
+                    <div class="mt20 dpf flex-wrap gap10">
+                        <span class="p10 bg-dark cfff rad5">.dpf .jcc</span>
+                        <span class="p10 bg-dark cfff rad5">.dpg .gtc3</span>
+                        <span class="p10 bg-dark cfff rad5">.gap20</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card p30">
+                    <div class="fs48 c-accent mb20">✨</div>
+                    <h3 class="fs20 fw6 mb10">Visual Effects</h3>
+                    <p class="fs16 c666 lh1-5">Shadows, transitions, animations and more to bring your UI to life.</p>
+                    <div class="mt20 dpf flex-wrap gap10">
+                        <span class="p10 bg-dark cfff rad5">.sd3</span>
+                        <span class="p10 bg-dark cfff rad5">.trn</span>
+                        <span class="p10 bg-dark cfff rad5">.anfadein</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="p40 bg-gradient-primary">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="fs32 fw6 cfff tc mb10">Live Examples</h2>
+            <p class="fs18 cfff op90 tc mb40" style="max-width: 700px; margin-left: auto; margin-right: auto;">See Globalize.css in action with these interactive examples</p>
+            
+            <div class="grid-demo">
+                <div class="feature-card p20">
+                    <h3 class="fs20 fw6 mb10 tl">Button Styles</h3>
+                    <div class="dpf fdc gap10">
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-secondary">Secondary Button</button>
+                        <button class="btn" style="background: var(--accent); color: white;">Accent Button</button>
+                    </div>
+                </div>
+                
+                <div class="feature-card p20">
+                    <h3 class="fs20 fw6 mb10 tl">Card Component</h3>
+                    <div class="feature-card p20 sd1">
+                        <h4 class="fs16 fw6 mb10">Card Title</h4>
+                        <p class="fs14 c666 mb15">This is an example card built with Globalize.css utility classes.</p>
+                        <button class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="feature-card p20">
+                    <h3 class="fs20 fw6 mb10 tl">Animated Element</h3>
+                    <div class="dpf jcc aic p20 bg-primary cfff rad50" style="width: 100px; height: 100px;">
+                        <span class="anpulse">Pulse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="p40 bg-white">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 class="fs32 fw6 mb20">Get Started in Seconds</h2>
+            <p class="fs18 c666 mb30 lh1-8">Add Globalize.css to your project and start building immediately. No configuration needed.</p>
+            
+            <div class="feature-card p20 tl mb30">
+                <h3 class="fs18 fw6 mb15">Install via npm</h3>
+                <div class="code-block">
+                    <span class="c-accent">npm install</span> globalize-css
+                </div>
+            </div>
+            
+            <div class="feature-card p20 tl">
+                <h3 class="fs18 fw6 mb15">CDN Link</h3>
+                <div class="code-block">
+                    <span class="c-accent">&lt;link</span> <span class="c-primary">rel=</span><span class="c-accent">"stylesheet"</span> <span class="c-primary">href=</span><span class="c-accent">"https://cdn.jsdelivr.net/npm/globalize-css@6.0/dist/globalize.min.css"</span><span class="c-accent">&gt;</span>
+                </div>
+            </div>
+            
+            <a href="#documentation" class="btn btn-primary mt40" style="padding: 15px 40px; font-size: 18px;">View Full Documentation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p30 bg-dark cfff">
+        <div style="max-width: 1200px; margin: 0 auto;" class="dpf jcsb aic">
+            <div>
+                <h3 class="fs20 fw6 mb10">Globalize.css</h3>
+                <p class="fs14 op90">The ultimate utility-first CSS framework</p>
+            </div>
+            <div class="dpf gap20">
+                <a href="#" class="cfff op90 trn">GitHub</a>
+                <a href="#" class="cfff op90 trn">Documentation</a>
+                <a href="#" class="cfff op90 trn">License</a>
+            </div>
+        </div>
+        <div class="tc mt30 pt20" style="border-top: 1px solid rgba(255,255,255,0.1);">
+            <p class="fs12 op70">© 2025 Globalize.css. MIT License. Created by Fabien Conéjéro.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="pf b30 r30 dpf aic jcc bg-primary cfff rad50" style="width: 50px; height: 50px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" aria-label="Back to top">
+        ↑
+    </a>
+</body>
+</html>

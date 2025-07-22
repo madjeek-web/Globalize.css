@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globalize.css Demo</title>
+    <style>
+        /* Insert your complete Globalize.css here */
+        /* For this demo, we'll include just a few representative classes */
+        /* Full CSS would be included in a real implementation */
+        
+        /* Color samples */
+        .c000{color:#000}.c111{color:#111}.c222{color:#222}.c333{color:#333}.c444{color:#444}
+        .c555{color:#555}.c666{color:#666}.c777{color:#777}.c888{color:#888}.c999{color:#999}
+        .cfff{color:#fff}.cf0{color:#f0f0f0}
+        .c00f{color:#00f}.cf00{color:#f00}.c0f0{color:#0f0}
+        
+        /* Backgrounds */
+        .bg000{background-color:#000}.bgfff{background-color:#fff}
+        .bg00f{background-color:#00f}.bgf00{background-color:#f00}.bg0f0{background-color:#0f0}
+        
+        /* Display */
+        .dpb{display:block}.dpi{display:inline}.dpib{display:inline-block}.dpf{display:flex}.dpg{display:grid}
+        
+        /* Typography */
+        .fs16{font-size:16px}.fs24{font-size:24px}
+        .fw4{font-weight:400}.fw7{font-weight:700}
+        .tc{text-align:center}.tl{text-align:left}.tr{text-align:right}
+        
+        /* Spacing */
+        .m10{margin:10px}.p10{padding:10px}
+        .mt20{margin-top:20px}.mb20{margin-bottom:20px}
+        
+        /* Borders */
+        .bds{border-style:solid}.bw1{border-width:1px}.bdc000{border-color:#000}
+        .rad5{border-radius:5px}
+        
+        /* Utility classes for demo layout */
+        .demo-section {
+            border: 1px solid #eee;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .demo-box {
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .flex-demo {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .grid-demo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="bgfff">
+    <div class="demo-section">
+        <h1 class="demo-title tc">Globalize.css Demonstration</h1>
+        <p class="fs16">This page demonstrates the various utility classes available in Globalize.css v6.0.</p>
+    </div>
+
+    <!-- Color Palette Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Color Palette</h2>
+        
+        <h3 class="tl">Text Colors</h3>
+        <div class="flex-demo">
+            <div class="demo-box bgfff c000">.c000 (#000)</div>
+            <div class="demo-box bgfff c333">.c333 (#333)</div>
+            <div class="demo-box bgfff c666">.c666 (#666)</div>
+            <div class="demo-box bgfff c999">.c999 (#999)</div>
+            <div class="demo-box bgfff cccc">.cccc (#ccc)</div>
+            <div class="demo-box bg000 cfff">.cfff (#fff)</div>
+            <div class="demo-box bgfff cf00">.cf00 (red)</div>
+            <div class="demo-box bgfff c0f0">.c0f0 (green)</div>
+            <div class="demo-box bgfff c00f">.c00f (blue)</div>
+        </div>
+        
+        <h3 class="tl">Background Colors</h3>
+        <div class="flex-demo">
+            <div class="demo-box bg000 cfff">.bg000 (#000)</div>
+            <div class="demo-box bg333 cfff">.bg333 (#333)</div>
+            <div class="demo-box bg666 cfff">.bg666 (#666)</div>
+            <div class="demo-box bg999">.bg999 (#999)</div>
+            <div class="demo-box bgccc">.bgccc (#ccc)</div>
+            <div class="demo-box bgfff">.bgfff (#fff)</div>
+            <div class="demo-box bgf00 cfff">.bgf00 (red)</div>
+            <div class="demo-box bg0f0">.bg0f0 (green)</div>
+            <div class="demo-box bg00f cfff">.bg00f (blue)</div>
+        </div>
+    </div>
+
+    <!-- Typography Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Typography</h2>
+        
+        <h3 class="tl">Font Sizes</h3>
+        <div>
+            <p class="fs8">.fs8 (8px)</p>
+            <p class="fs12">.fs12 (12px)</p>
+            <p class="fs16">.fs16 (16px)</p>
+            <p class="fs24">.fs24 (24px)</p>
+            <p class="fs32">.fs32 (32px)</p>
+        </div>
+        
+        <h3 class="tl">Font Weights</h3>
+        <div class="flex-demo">
+            <div class="demo-box fw1">.fw1 (100)</div>
+            <div class="demo-box fw4">.fw4 (400)</div>
+            <div class="demo-box fw7">.fw7 (700)</div>
+            <div class="demo-box fw9">.fw9 (900)</div>
+        </div>
+        
+        <h3 class="tl">Text Alignment</h3>
+        <div>
+            <p class="tl bds bw1 bdc000 p10">.tl (text-align: left)</p>
+            <p class="tc bds bw1 bdc000 p10">.tc (text-align: center)</p>
+            <p class="tr bds bw1 bdc000 p10">.tr (text-align: right)</p>
+        </div>
+    </div>
+
+    <!-- Layout Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Layout & Display</h2>
+        
+        <h3 class="tl">Display Properties</h3>
+        <div class="flex-demo">
+            <div class="demo-box dpb bg000 cfff">.dpb (block)</div>
+            <div class="demo-box dpi bg000 cfff">.dpi (inline)</div>
+            <div class="demo-box dpib bg000 cfff">.dpib (inline-block)</div>
+        </div>
+        
+        <h3 class="tl">Flexbox</h3>
+        <div class="dpf jcsb aic p10 bds bw1 bdc000">
+            <div class="demo-box">Flex item 1</div>
+            <div class="demo-box">Flex item 2</div>
+            <div class="demo-box">Flex item 3</div>
+        </div>
+        
+        <h3 class="tl">Grid</h3>
+        <div class="dpg gap10 p10 bds bw1 bdc000">
+            <div class="demo-box">Grid item 1</div>
+            <div class="demo-box">Grid item 2</div>
+            <div class="demo-box">Grid item 3</div>
+        </div>
+    </div>
+
+    <!-- Spacing Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Spacing</h2>
+        
+        <h3 class="tl">Margins</h3>
+        <div>
+            <div class="demo-box m0 bg000 cfff">.m0 (no margin)</div>
+            <div class="demo-box m10 bg000 cfff">.m10 (10px margin)</div>
+            <div class="demo-box m20 bg000 cfff">.m20 (20px margin)</div>
+        </div>
+        
+        <h3 class="tl">Padding</h3>
+        <div>
+            <div class="demo-box p0 bg000 cfff">.p0 (no padding)</div>
+            <div class="demo-box p10 bg000 cfff">.p10 (10px padding)</div>
+            <div class="demo-box p20 bg000 cfff">.p20 (20px padding)</div>
+        </div>
+    </div>
+
+    <!-- Borders & Effects Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Borders & Effects</h2>
+        
+        <h3 class="tl">Border Styles</h3>
+        <div class="flex-demo">
+            <div class="demo-box bds bw1 bdc000">.bds (solid)</div>
+            <div class="demo-box bdd bw1 bdc000">.bdd (dashed)</div>
+            <div class="demo-box bddo bw1 bdc000">.bddo (dotted)</div>
+        </div>
+        
+        <h3 class="tl">Border Radius</h3>
+        <div class="flex-demo">
+            <div class="demo-box bds bw1 bdc000 rad0">.rad0</div>
+            <div class="demo-box bds bw1 bdc000 rad5">.rad5</div>
+            <div class="demo-box bds bw1 bdc000 rad10">.rad10</div>
+            <div class="demo-box bds bw1 bdc000 rad50">.rad50 (circle)</div>
+        </div>
+        
+        <h3 class="tl">Shadows</h3>
+        <div class="flex-demo">
+            <div class="demo-box sd1">.sd1 (small shadow)</div>
+            <div class="demo-box sd3">.sd3 (medium shadow)</div>
+            <div class="demo-box sd5">.sd5 (large shadow)</div>
+        </div>
+    </div>
+
+    <!-- Responsive Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Responsive Utilities</h2>
+        
+        <h3 class="tl">Width Classes</h3>
+        <div>
+            <div class="demo-box w25 bg000 cfff">.w25 (25% width)</div>
+            <div class="demo-box w50 bg000 cfff">.w50 (50% width)</div>
+            <div class="demo-box w100 bg000 cfff">.w100 (100% width)</div>
+        </div>
+        
+        <h3 class="tl">Viewport Units</h3>
+        <div>
+            <div class="demo-box wvw50 bg000 cfff">.wvw50 (50vw width)</div>
+            <div class="demo-box hvh10 bg000 cfff">.hvh10 (10vh height)</div>
+        </div>
+    </div>
+
+    <!-- Animations Section -->
+    <div class="demo-section">
+        <h2 class="demo-title">Animations</h2>
+        
+        <div class="flex-demo">
+            <div class="demo-box anfadein">.anfadein (fade in)</div>
+            <div class="demo-box anspin">.anspin (spinning)</div>
+            <button class="demo-box trn trbg" onmouseover="this.style.backgroundColor='#00f'" onmouseout="this.style.backgroundColor='#000'">
+                Hover for transition
+            </button>
+        </div>
+    </div>
+
+    <div class="demo-section tc">
+        <p class="fs16">This is just a sampling of the 1000+ utility classes available in Globalize.css</p>
+        <p class="fs14">For complete documentation, visit: <a href="https://github.com/madjeek-web/Globalize.css/tree/main">GitHub Repository</a></p>
+    </div>
+</body>
+</html>
