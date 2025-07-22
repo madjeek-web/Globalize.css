@@ -100,7 +100,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 
  ____________________________________
 
-V. ULTIMATE - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
+V.2 - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
 ____________________________________
 ```css
 
@@ -122,7 +122,7 @@ ____________________________________
 ____________________________________
 ____________________________________
 
-V. BASIC - GLOBALIZE CSS  - MIT License Copyright (c) Fabien Conéjéro / FC84  
+V.1 - GLOBALIZE CSS  - MIT License Copyright (c) Fabien Conéjéro / FC84  
 ____________________________________
 ```css
 :root{ font-family:'....','.....';caret-color:transparent;  }
