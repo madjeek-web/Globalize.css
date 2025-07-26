@@ -18,7 +18,7 @@ Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on 
 https://github.com/madjeek-web/Globalize.css/tree/main/dist
 ____
 Globalize css is easy to use and quick to tame. 
-You can combine Globalize css with : normalize.css - in a single css file.
+You can combine Globalize css with Probalize css : https://github.com/madjeek-web/Probalize.css and with : normalize.css - in a single css file.
 https://github.com/necolas/normalize.css : MIT License Copyright (c) Nicolas Gallagher and Jonathan Neal  
 ___
 Globalize reduces the amount of code written in your files or pages, so it is useful to load pages faster in web browsers, it is wise to work with globalize rather than using many values in the root. Because you have to repeat your values in css and css class in html ( three places so ).
