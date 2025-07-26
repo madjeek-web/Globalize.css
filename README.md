@@ -96,8 +96,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _
 .vil    {visibility : initial }
 .vut    {visibility : unset }
 ```
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ 
-
  ____________________________________
 
 V.2 - GLOBALIZE CSS  -  MIT License Copyright (c) Fabien Conéjéro / FC84
