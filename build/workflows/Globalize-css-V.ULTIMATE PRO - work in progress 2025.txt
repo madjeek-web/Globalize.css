@@ -1,4 +1,4 @@
-Nous allons créer une version améliorée de Globalize.css en intégrant les points forts de Tailwind CSS tout en ajoutant des fonctionnalités uniques.
+Nous allons créer une version améliorée de Globalize.css ( Globalize.css Ultimate Pro ) en intégrant les points forts de Tailwind CSS tout en ajoutant des fonctionnalités uniques.
  Objectifs :
  1. Conserver la simplicité et la légèreté de Globalize.css (classes atomiques).
  2. Ajouter la personnalisation (comme Tailwind via un fichier de configuration).
