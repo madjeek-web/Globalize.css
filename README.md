@@ -29,6 +29,30 @@ Tailwind remains a fantastic tool for CSS purists, but Globalize.css Ultimate Pr
 - Ideal for teams aiming 'ship faster without sacrificing quality'.
 
 For demanding projects: Globalize.css Ultimate Pro is not a simple framework, it’s a complete ecosystem. 🚀
+
+Globalize.css Ultimate Pro 🚀
+A framework 30% lighter than Tailwind, with unique features:
+
+Exclusive Features
+✅ 15 transition functions (transition-bounce, transition-smooth)
+✅ Predefined gradients (bg-gradient-1)
+✅ Extended animations (pulse-2x, spin-reverse)
+✅ Theme system via CSS Variables
+
+Usage
+html
+<link href="dist/Globalize-css-Ultimate-Pro-EN-en.css" rel="stylesheet">  
+Customization :
+Modify src/_config.scss before compilation.
+
+Key Notes:
+Kept the emoji (🚀) for visual consistency
+
+Used "framework" instead of "library" to match CSS ecosystem terminology
+
+"Predefined gradients" is more natural in English than "pre-configured gradients"
+
+"Modify" sounds more natural than "Edit" in this technical context
 ____
 Download the version of Globalize.css - V.ULTIMATE / V.6 - New update on : 15 July 2025
 https://github.com/madjeek-web/Globalize.css/tree/main/dist
