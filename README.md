@@ -14,6 +14,10 @@ You can use Globalize.css for all your personal web projects and client projects
 Since the CSS class names are very logical and simple, you can easily complete this project intuitively according to your needs.
 ____
 
+August 2025 :
+Evolutions of the Globalize.css project / work in progress...
+Globalize.css Ultimate Pro VS Tailwind CSS
+____
 Download the latest version of Globalize.css - V.ULTIMATE / V.6 - New update on : 15 July 2025
 https://github.com/madjeek-web/Globalize.css/tree/main/dist
 ____
