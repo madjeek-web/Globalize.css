@@ -21,7 +21,7 @@ Globalize.css Ultimate Pro VS Tailwind CSS
 @see DOC. : https://github.com/madjeek-web/Globalize.css/blob/main/build/workflows/Globalize-css-V.ULTIMATE%20PRO%20-%20work%20in%20progress%202025.txt
 
 Download the latest version of Globalize.css Ultimate Pro - New update on : 27 July 2025
-https://github.com/madjeek-web/Globalize.css/blob/main/dist/Globalize-css-Ultimate-Pro-EN-en-Minimized.css
+https://github.com/madjeek-web/Globalize.css/blob/main/dist/Globalize-css-Ultimate-Pro-EN-en.css
 
 Tailwind remains a fantastic tool for CSS purists, but Globalize.css Ultimate Pro represents the evolution towards an era of radical productivity :  
 - Less code, more consistency.
